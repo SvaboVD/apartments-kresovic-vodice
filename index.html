@@ -27,30 +27,22 @@
             font-weight: bold;
         }
         .hero {
-            position: relative;
-            width: 100%;
+            width: 100vw;
             min-height: 50vh;
-            max-height: 70vh;
-            overflow: hidden;
+            max-height: 90vh;
+            background: #222;
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
         }
         .hero img {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            object-fit: cover;
-            z-index: 1;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            color: #fff;
-            text-align: center;
-            background: rgba(0,0,0,0.35);
-            padding: 2em 1em;
-            border-radius: 10px;
-            max-width: 90vw;
+            width: 100vw;
+            height: 50vh;
+            max-height: 90vh;
+            object-fit: contain;
+            display: block;
+            background: #222;
         }
         .container {
             max-width: 900px;
@@ -89,26 +81,24 @@
             .container {
                 padding: 1em;
             }
-            .hero-content {
-                padding: 1em 0.5em;
+            .hero img {
+                height: 30vh;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="apartment1.html">Apartment 1</a>
-            <a href="apartment2.html">Apartment 2</a>
-            <a href="apartment3.html">Apartment 3</a>
-        </nav>
+        <h1>Welcome to Our Apartments</h1>
+        <p>Your perfect stay awaits!</p>
     </header>
+    <nav>
+        <a href="apartment1.html">Apartment 1</a>
+        <a href="apartment2.html">Apartment 2</a>
+        <a href="apartment3.html">Apartment 3</a>
+    </nav>
     <div class="hero">
         <img src="House.jpg" alt="Our Apartments">
-        <div class="hero-content">
-            <h1>Welcome to Our Apartments</h1>
-            <p>Your perfect stay awaits!</p>
-        </div>
     </div>
     <div class="container">
         <div class="info">
